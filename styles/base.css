@@ -1,9 +1,10 @@
 :root {
     --primary-blue: rgb(29, 77, 114);
-    --blue-light: rgba(29, 77, 114, 0.1);
-    --blue-dark: rgba(29, 77, 114, 0.7);
     --earth-brown: rgba(100, 50, 25, 1);
     --sun-yellow: rgba(255, 255, 0, 1);
+    --blue-light: rgba(29, 77, 114, 0.1);
+    --blue-dark: rgba(29, 77, 114, 0.7);
+ 
   }
   
   * {
