@@ -1,0 +1,152 @@
+:root {
+    --primary-blue: rgb(29, 77, 114);
+    --blue-light: rgba(29, 77, 114, 0.1);
+    --blue-dark: rgba(29, 77, 114, 0.7);
+    --earth-brown: rgba(100, 50, 25, 1);
+    --sun-yellow: rgba(255, 255, 0, 1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  header {
+    background: var(--primary-blue);
+    color: #fff;
+  }
+  
+  h1 {
+    background: var(--primary-blue);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  h2 {
+    text-align: center;
+    background: var(--primary-blue);
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  nav {
+    display: flex;
+    background: #333;
+  }
+  
+  nav a,
+  nav a:visited {
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav a:hover {
+    background: var(--earth-brown);
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  
+  footer {
+    background: var(--primary-blue);
+    color: #fff;
+    padding: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 0.5rem;
+  }
+  
+  .profile {
+    width: 120px;
+    height: auto;
+    margin-right: 2rem;
+  }
+  
+  .card {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+  }
+  
+  .card p {
+    padding: 1rem;
+  }
+  
+  .me img {
+    float: right;
+  }
+  
+  .country {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+  
+  .country h3 {
+    grid-column: span 2;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+  }
+  
+  .highlight {
+    color: var(--sun-yellow);
+    font-size: smaller;
+  }
+  
+  figure {
+    margin: 0.5rem;
+  }
+  
+  figcaption {
+    font-size: smaller;
+    text-align: center;
+    font-style: italic;
+  }
+  
