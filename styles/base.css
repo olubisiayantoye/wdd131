@@ -1,96 +1,97 @@
 :root {
     --primary-blue: rgb(29, 77, 114);
-    --blue-light: rgba(29, 77, 114, 0.1);
-    --blue-dark: rgba(29, 77, 114, 0.7);
-    --earth-brown: rgba(100, 50, 25, 1);
-    --sun-yellow: rgba(255, 255, 0, 1);
+    --light-blue: rgba(29, 77, 114, 0.1);
+    --semi-dark-blue: rgba(29, 77, 114, 0.7);
+    --rich-brown: rgba(100, 50, 25, 1);
+    --bright-yellow: rgba(255, 255, 0, 1);
   }
   
   * {
     margin: 0;
-    padding: 0;
   }
   
   html,
   body {
+    margin: 0;
+    padding: 0;
     height: 100%;
   }
   
   body {
     font-family: 'Montserrat Alternates', sans-serif;
-    line-height: 1.5;
     color: #333;
+    line-height: 1.5;
   }
   
   header {
     background: var(--primary-blue);
-    color: #fff;
+    color: white;
   }
   
   h1 {
-    background: var(--primary-blue);
     font-size: 1.2rem;
-    text-align: center;
     padding: 1rem;
+    text-align: center;
+    background: var(--primary-blue);
   }
   
   h2 {
-    text-align: center;
-    background: var(--primary-blue);
-    color: #fff;
     font-size: 1.1rem;
-    margin: 0 0 0.5rem;
+    text-align: center;
+    color: white;
+    background: var(--primary-blue);
+    margin-bottom: 0.5rem;
     padding: 0.5rem;
     border-radius: 0.5rem 0.5rem 0 0;
   }
   
   nav {
     display: flex;
-    background: #333;
+    background-color: #333;
   }
   
   nav a,
   nav a:visited {
-    display: block;
-    flex-grow: 1;
+    flex: 1;
     text-align: center;
-    font-size: 1rem;
     padding: 0.5rem;
+    font-size: 1rem;
+    color: white;
     text-decoration: none;
-    color: #fff;
+    display: block;
   }
   
   nav a:hover {
-    background: var(--earth-brown);
     font-weight: bold;
-    color: #fff;
+    color: white;
+    background: var(--rich-brown);
   }
   
   main {
     max-width: 960px;
-    margin: 0 auto;
+    margin: auto;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 0.5rem;
-    padding: 1rem;
   }
   
   footer {
     background: var(--primary-blue);
-    color: #fff;
+    color: white;
     padding: 1rem;
     font-size: 0.9rem;
-    text-align: center;
   }
   
   footer p {
+    text-align: center;
     margin: 0;
   }
   
   img {
+    border: 1px solid rgba(0, 0, 0, 0.3);
     width: 100%;
     height: auto;
-    border: 1px solid rgba(0, 0, 0, 0.3);
     margin: 0.5rem;
   }
   
@@ -118,14 +119,15 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
+    justify-content: center;
   }
   
   .country h3 {
-    grid-column: span 2;
     text-align: center;
+    grid-column: 1 / -1;
     border-bottom: 1px solid #bbb;
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
   }
   
   .middle {
@@ -136,7 +138,7 @@
   }
   
   .highlight {
-    color: var(--sun-yellow);
+    color: var(--bright-yellow);
     font-size: smaller;
   }
   
@@ -145,8 +147,8 @@
   }
   
   figcaption {
-    font-size: smaller;
     text-align: center;
     font-style: italic;
+    font-size: smaller;
   }
   
