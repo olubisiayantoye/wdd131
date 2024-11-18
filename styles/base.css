@@ -2,7 +2,7 @@
     --primary-blue: rgb(29, 77, 114);
     --light-blue: rgba(29, 77, 114, 0.1);
     --semi-dark-blue: rgba(29, 77, 114, 0.7);
-    --rich-brown: rgba(100, 50, 25, 1);
+    --rich-brown: rgb(61, 82, 2);
     --bright-yellow: rgba(255, 255, 0, 1);
   }
   
@@ -111,7 +111,7 @@
     padding: 1rem;
   }
   
-  .me img {
+  .info img {
     float: right;
   }
   
