@@ -1,0 +1,14 @@
+/* Media query for viewports 500px and larger */
+@media screen and (min-width: 500px) {
+    /* Header styling changes */
+    header {
+      background-color: #000; /* Black background */
+      color: #fff; /* White text */
+    }
+  
+    /* Main element changes to two columns */
+    main {
+      grid-template-columns: 1fr 1fr; /* Two equal columns */
+    }
+  }
+  
