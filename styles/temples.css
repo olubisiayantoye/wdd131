@@ -74,10 +74,7 @@
     font-weight: 700;
   }
   
-  nav a:hover~#navmenu~#hambutton {
-    background-color: var(---yellow);
-    color: #000;
-  }
+ 
   
   nav.show {
     width: 100%;
