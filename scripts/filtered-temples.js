@@ -83,7 +83,7 @@ const temples = [
       {
         templeName: "Madrid Spain",
         location: "Madrid, Spain",
-        dedicated: "1999, March, 19–21" ,
+        dedicated: "1999, March, 21" ,
         area: 45800,
         imageUrl:
         "https://churchofjesuschristtemples.org/assets/img/temples/_temp/056-Madrid-Spain-Temple.jpg"
