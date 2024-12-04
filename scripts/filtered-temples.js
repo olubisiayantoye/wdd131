@@ -134,7 +134,7 @@ function renderTemples(filterFn = () => true) {
   
   // Example filters
   const filters = {
-    old: (temple) => new Date(temple.dedicated).getFullYear() < 1900,
+    old: (temple) => new Date(temple.dedicated).getFullYear() < 2000,
     new: (temple) => new Date(temple.dedicated).getFullYear() > 2000,
     large: (temple) => temple.area > 90000,
     small: (temple) => temple.area < 10000,
