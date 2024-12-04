@@ -1,3 +1,18 @@
+// Set the current year and last modified date
+let d = new Date();
+document.getElementById("currentYear").innerHTML = `&copy; ${d.getFullYear()}`;
+document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
+
+// Hamburger button functionality
+const hambutton = document.querySelector("#hambutton");
+const navmenu = document.querySelector("#navmenu");
+
+hambutton.addEventListener("click", () => {
+  navmenu.classList.toggle("show"); // Toggle menu visibility
+  hambutton.classList.toggle("show"); // Toggle button state
+});
+
+
 const temples = [
     {
       templeName: "Aba Nigeria",
@@ -55,27 +70,67 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
+
+    {
+        templeName: "Dallas Texas",
+        location: "Texas, United States",
+        dedicated: "1989, March, 5",   
+        area: 44207,
+        imageUrl:
+        "https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-55240-main.jpg"
+      },
+
+      {
+        templeName: "Madrid Spain",
+        location: "Madrid, Spain",
+        dedicated: "1999, March, 19–21" ,
+        area: 45800,
+        imageUrl:
+        "https://churchofjesuschristtemples.org/assets/img/temples/_temp/056-Madrid-Spain-Temple.jpg"
+      },
+
+      {
+        templeName: "Manaus Brazil",
+        location: "Ponta, Negra",
+        dedicated: "2012, June, 10",
+        area: 32032,
+        imageUrl:
+        "https://churchofjesuschristtemples.org/assets/img/temples/_temp/138-Manaus-Brazil-Temple.jpg"
+      }
+  
+  
+    
+
     // Add more temple objects here...
   ];
 
-  // Function to render temple cards
+// Function to render temple cards
 function renderTemples(filterFn = () => true) {
     const container = document.getElementById("temple-container");
     container.innerHTML = ""; // Clear existing content
+  
     const filteredTemples = temples.filter(filterFn);
+  
     filteredTemples.forEach((temple) => {
       const card = document.createElement("figure");
       card.classList.add("temple-card");
+  
       card.innerHTML = `
         <h2>${temple.templeName}</h2>
         <p>Location: ${temple.location}</p>
         <p>Dedicated: ${temple.dedicated}</p>
         <p>Area: ${temple.area.toLocaleString()} sq ft</p>
-        <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" />
+        <img 
+          src="${temple.imageUrl}" 
+          alt="Image of ${temple.templeName}" 
+          loading="lazy" 
+        />
       `;
+  
       container.appendChild(card);
     });
   }
+  
   
   // Example filters
   const filters = {
