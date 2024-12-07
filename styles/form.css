@@ -35,6 +35,7 @@ header, footer {
 }
   
 
+
 form {
   margin: 1rem auto;
   border: 1px solid var(--border);
@@ -86,7 +87,7 @@ textarea {
   height: 6rem;
 }
 
-.radio-rating {
+.radio-ratingx {
   margin-top: .25rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -108,3 +109,24 @@ fieldset{
   padding: 3%;
 }
 
+
+
+.radio-rating {
+  display: flex; 
+  gap: 12px; 
+}
+
+.rating-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.radio-rating label {
+  font-size: 1.5rem; 
+  cursor: pointer;
+}
+
+.radio-rating input[type="radio"] {
+  margin-top: 7px; 
+}
