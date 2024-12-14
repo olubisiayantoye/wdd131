@@ -1,0 +1,40 @@
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #FFD700;
+}
+.navbar {
+    background-color: #008000;
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+.section {
+    padding: 60px 20px;
+}
+.btn-primary {
+    background-color: #FFD700;
+    border-color: #FFD700;
+}
+.btn-primary:hover {
+    background-color: #FFC107;
+    border-color: #FFC107;
+}
+.lazy {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.lazy.loaded {
+    opacity: 1;
+}
+
+footer {
+    background-color: #008000; 
+    color: #FFFFFF;
+}

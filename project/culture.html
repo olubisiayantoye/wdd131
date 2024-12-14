@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Nigeria's rich cultural heritage, including music, dance, festivals, and traditional attire. Immerse yourself in the vibrancy of Nigerian culture.">
+    <title>Discover Nigeria - Culture</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;600&family=Georgia:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #008000;">
+        <div class="container">
+            <a class="navbar-brand" href="Home.html">Discover Nigeria</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Landmarks.html">Landmarks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Cuisine.html">Cuisine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Potential.html">Potential</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Culture Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #008000;">Culture</h2>
+            <p class="text-center">Immerse yourself in Nigeria's rich cultural heritage, from vibrant music and dance to colorful festivals and traditional attire.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://example.com/music.jpg" class="card-img-top lazy" alt="Music" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #008000;">Music</h5>
+                            <p class="card-text">Explore the beats of Afrobeat, highlife, and traditional sounds.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://example.com/dance.jpg" class="card-img-top lazy" alt="Dance" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #008000;">Dance</h5>
+                            <p class="card-text">Discover traditional and modern dance styles across Nigeria.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://example.com/festival.jpg" class="card-img-top lazy" alt="Festivals" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #008000;">Festivals</h5>
+                            <p class="card-text">Experience festivals that celebrate Nigeria's diversity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <h3 style="color: #008000;">Traditional Attire</h3>
+                    <p>From the agbada to the iro and buba, traditional Nigerian clothing is a vibrant expression of the nation's cultural identity. Explore the colorful fabrics and designs unique to various ethnic groups.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://example.com/attire.jpg" alt="Traditional Attire" class="img-fluid lazy" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4" style="background-color: #008000; color: #FFFFFF;">
+        <p>&copy; 2024 Discover Nigeria. All rights reserved. | <a href="Attributions.html" style="color: #FFD700;">Attributions</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript to handle lazy-loading interaction
+        document.addEventListener("DOMContentLoaded", () => {
+            const lazyImages = document.querySelectorAll(".lazy");
+            lazyImages.forEach(img => {
+                img.addEventListener("load", () => {
+                    console.log(`${img.alt} loaded`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
