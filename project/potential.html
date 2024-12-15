@@ -23,7 +23,7 @@
                     <li class="nav-item"><a class="nav-link" href="Culture.html">Culture</a></li>
                     <li class="nav-item"><a class="nav-link" href="Landmarks.html">Landmarks</a></li>
                     <li class="nav-item"><a class="nav-link" href="Cuisine.html">Cuisine</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Potential.html">Potential</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Potential.html">Potential</a></li>
                 </ul>
             </div>
         </div>
@@ -73,24 +73,5 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Lazy Loading Script
-        document.addEventListener("DOMContentLoaded", function() {
-            const lazyImages = document.querySelectorAll(".lazy");
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        img.src = img.dataset.src;
-                        img.classList.add("loaded");
-                        observer.unobserve(img);
-                    }
-                });
-            });
-
-            lazyImages.forEach(img => {
-                observer.observe(img);
-            });
-        });
-    </script>
+    <script src="scripts/script.js"></script>
 </body>
