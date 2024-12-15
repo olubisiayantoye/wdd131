@@ -3,95 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Nigeria's potential: Economic growth, technological innovations, and talents shaping the future.">
+    <meta name="description" content="Explore Nigeria's economic growth, technological innovations, and the talents of its people across various sectors.">
     <title>Discover Nigeria - Potential</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@300;400;600&family=Georgia:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="Home.html">Discover Nigeria</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Culture.html">Culture</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Landmarks.html">Landmarks</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Cuisine.html">Cuisine</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Potential.html">Potential</a></li>
+            <a class="navbar-brand" href="index.html">Discover Nigeria</a>
+            <button class="navbar-toggler" type="button">&#9776;</button>
+            <div class="navbar-menu">
+                <ul class="nav-list">
+                    <li><a href="index.htmll">Home</a></li>
+                    <li><a href="Culture.html">Culture</a></li>
+                    <li><a href="Landmarks.html">Landmarks</a></li>
+                    <li><a href="Cuisine.html">Cuisine</a></li>
+                    <li><a href="Potential.html">Potential</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Potential Section -->
+    <!-- Main Content -->
+    <header class="hero">
+        <div class="container">
+            <h1>Unveiling Nigeria's Potential</h1>
+            <p>Discover how Nigeria's innovations and talent are shaping the future.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>Economic Growth</h2>
+            <p>Nigeria is Africa's largest economy, driven by diverse industries including oil and gas, agriculture, and emerging technology sectors. Explore the strides made in infrastructure development and sustainable growth.</p>
+            <img src="images/economy.jpg" alt="Economic Growth in Nigeria" class="responsive-img">
+        </div>
+    </section>
+
     <section class="section bg-light">
         <div class="container">
-            <h1 class="text-center mb-4">Nigeria's Potential</h1>
-            <p class="text-center">Explore the vast opportunities and incredible talents that position Nigeria as a global leader in innovation, culture, and development.</p>
+            <h2>Technological Innovations</h2>
+            <p>From fintech startups to groundbreaking innovations in health and education, Nigeria's tech ecosystem is thriving. Lagos, often referred to as the Silicon Valley of Africa, leads the charge in tech development.</p>
+            <img src="images/technology.jpg" alt="Technological Innovations in Nigeria" class="responsive-img">
+        </div>
+    </section>
 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img data-src="https://example.com/economy.jpg" class="card-img-top lazy" alt="Economic Growth">
-                        <div class="card-body">
-                            <h5 class="card-title">Economic Growth</h5>
-                            <p class="card-text">Discover Nigeria's booming industries, thriving markets, and potential as a global economic powerhouse.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img data-src="https://example.com/technology.jpg" class="card-img-top lazy" alt="Technological Innovations">
-                        <div class="card-body">
-                            <h5 class="card-title">Technological Innovations</h5>
-                            <p class="card-text">Learn about cutting-edge advancements and the tech talent propelling Nigeria into the future.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img data-src="https://example.com/talent.jpg" class="card-img-top lazy" alt="Talent and Creativity">
-                        <div class="card-body">
-                            <h5 class="card-title">Talent and Creativity</h5>
-                            <p class="card-text">Meet the individuals making waves in arts, science, and business on the global stage.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section">
+        <div class="container">
+            <h2>Talented People</h2>
+            <p>Nigerians excel across the globe in arts, science, sports, and entertainment. The nation's youth are driving creativity and innovation, putting Nigeria on the world stage.</p>
+            <img src="images/talent.jpg" alt="Talented Nigerians" class="responsive-img">
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-4">
-        <p>&copy; 2024 Discover Nigeria. All rights reserved. | <a href="attributions.html">Attributions</a></p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Discover Nigeria. All rights reserved. <a href="Contact.html">Contact Us</a></p>
+        </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Lazy Loading Script
-        document.addEventListener("DOMContentLoaded", function() {
-            const lazyImages = document.querySelectorAll(".lazy");
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        img.src = img.dataset.src;
-                        img.classList.add("loaded");
-                        observer.unobserve(img);
-                    }
-                });
-            });
-
-            lazyImages.forEach(img => {
-                observer.observe(img);
-            });
-        });
-    </script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
