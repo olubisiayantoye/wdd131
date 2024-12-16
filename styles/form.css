@@ -5,7 +5,7 @@
     --blue: rgb(29, 77, 114);
     --blue-1: rgba(29, 77, 114, 0.1);
     --blue-7: rgba(29, 77, 114, 0.7);
-    --brown: rgba(100, 50, 25, 1);
+    --headb: rgba(44, 4, 44, 1);
     --yellow: rgba(255, 255, 0, 1);
 }
 @media (min-width: 600px) {
@@ -26,7 +26,7 @@ body {
   font-family: Lato, Helvetica, Arial, sans-serif;
 }
 header, footer {
-  background-color: var(--brown);
+  background-color: var(--headb);
   color: white;
   text-align: center;
   padding: 1rem;
