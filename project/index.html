@@ -8,6 +8,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;600&family=Georgia:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -19,25 +22,27 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li><a class="nav-link active" href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="culture.html">Culture</a></li>
-                    <li><a class="nav-link" href="landmarks.html">Landmarks</a></li>
-                    <li><a class="nav-link" href="cuisine.html">Cuisine</a></li>
-                    <li><a class="nav-link" href="potential.html">Potential</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="landmarks.html">Landmarks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cuisine.html">Cuisine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="potential.html">Potential</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="bg-light text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Welcome to Discover Nigeria</h1>
-            <p class="lead">Explore the vibrant culture, breathtaking landmarks, delicious cuisine, and boundless potential of Nigeria.</p>
-            <a href="#explore" class="btn btn-lg explore-btn ">Explore Now</a>
-        </div>
-    </header>
+   
+<!-- Hero Section -->
+<header class="hero-section  bg-light text-center py-5" >
+    <div class="container brl">
+        <h1 class="display-4">Welcome to Discover Nigeria</h1>
+        <p class="lead">Explore the vibrant culture, breathtaking landmarks, delicious cuisine, and boundless potential of Nigeria.</p>
+        <a href="#explore" class="btn btn-lg explore-btn">Explore Now</a>
+    </div>
+</header>
+
 
     <!-- About Section -->
     <section class="py-5" id="explore">
@@ -52,17 +57,17 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-4">
-                    <img src="images/culture.jpg" alt="Culture" class="img-fluid mb-3 lazy" loading="lazy">
+                    <img data-src="images/culture.jpg" alt="Culture" class="img-fluid mb-3 lazy">
                     <h3>Culture</h3>
                     <p>Experience the vibrant traditions, music, and festivals of Nigeria.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/landmarks.jpg" alt="Landmarks" class="img-fluid mb-3 lazy" loading="lazy">
+                    <img data-src="images/landmarks.jpg" alt="Landmarks" class="img-fluid mb-3 lazy">
                     <h3>Landmarks</h3>
                     <p>Explore iconic landmarks and natural wonders across Nigeria.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/cuisine.jpg" alt="Cuisine" class="img-fluid mb-3 lazy" loading="lazy">
+                    <img data-src="images/cuisine.jpg" alt="Cuisine" class="img-fluid mb-3 lazy">
                     <h3>Cuisine</h3>
                     <p>Delight in the flavors of Nigeria's diverse and delicious dishes.</p>
                 </div>
@@ -72,12 +77,12 @@
 
     <!-- Footer -->
     <footer class="text-center py-4">
-        <p><span id="currentYear"></span> Discover Nigeria. All rights reserved. | <a href="Attributions.html">Attributions</a></p>
-        <p  id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+        <p><span id="currentYear"></span> Discover Nigeria. All rights reserved. | <a href="attributions.html">Attributions</a></p>
+        <p id="lastModified"></p>
     </footer>
     
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>
+

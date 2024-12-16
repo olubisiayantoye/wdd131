@@ -7,11 +7,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="container">
             <a class="navbar-brand" href="index.html">Discover Nigeria</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -19,12 +18,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li><a class="nav-link" href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="culture.html">Culture</a></li>
-                    <li><a class="nav-link" href="landmarks.html">Landmarks</a></li>
-                    <li><a class="nav-link" href="cuisine.html">Cuisine</a></li>
-                    <li><a class="nav-link" href="potential.html">Potential</a></li>
-                    <li><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li><a class="nav-link" href="index.html" aria-label="Go to Home Page">Home</a></li>
+                    <li><a class="nav-link" href="culture.html" aria-label="Learn about Nigerian Culture">Culture</a></li>
+                    <li><a class="nav-link" href="landmarks.html" aria-label="Explore Nigerian Landmarks">Landmarks</a></li>
+                    <li><a class="nav-link" href="cuisine.html" aria-label="Discover Nigerian Cuisine">Cuisine</a></li>
+                    <li><a class="nav-link" href="potential.html" aria-label="See Nigeria's Potential">Potential</a></li>
+                    <li><a class="nav-link active text-decoration-underline" href="contact.html" aria-label="Contact Us Page">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -33,7 +32,7 @@
     <!-- Contact Section -->
     <section class="section bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
+            <h2 class="section-title text-center">Contact Us</h2>
             <p class="text-center">Got a question or need more information? Fill out the form below, and we'll get back to you soon!</p>
             <form action="/submit_contact" method="post" class="row g-3">
                 <div class="col-md-6">
@@ -59,10 +58,10 @@
         </div>
     </section>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <footer class="text-center py-4">
         <p><span id="currentYear"></span> Discover Nigeria. All rights reserved. | <a href="Attributions.html">Attributions</a></p>
-        <p  id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+        <p id="lastModified"></p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

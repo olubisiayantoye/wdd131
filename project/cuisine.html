@@ -19,26 +19,26 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li><a class="nav-link" href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="culture.html">Culture</a></li>
-                    <li><a class="nav-link" href="landmarks.html">Landmarks</a></li>
-                    <li><a class="nav-link active" href="cuisine.html">Cuisine</a></li>
-                    <li><a class="nav-link" href="potential.html">Potential</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="landmarks.html">Landmarks</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cuisine.html" aria-current="page">Cuisine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="potential.html">Potential</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Cuisine Section -->
-    <section class="section bg-light">
+    <section class="section bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-4" style="color: #008000;">Cuisine</h2>
+            <h1 class="text-center mb-4" style="color: #008000;">Cuisine</h1>
             <p class="text-center">Savor the taste of Nigeria with its rich and diverse culinary traditions that reflect the nation's vibrant culture.</p>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/jollof-rice.jpg" class="card-img-top lazy" alt="Jollof Rice" loading="lazy">
+                        <img data-src="images/jollof-rice.jpg" class="card-img-top lazy" alt="A plate of Jollof Rice, garnished with vegetables" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title" style="color: #FFD700;">Jollof Rice</h5>
                             <p class="card-text">A West African favorite, this dish combines rice, tomatoes, and spices for a delicious meal.</p>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/suya.jpg" class="card-img-top lazy" alt="Suya" loading="lazy">
+                        <img data-src="images/suya.jpg" class="card-img-top lazy" alt="Grilled Suya skewers served with onions and spices" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title" style="color: #FFD700;">Suya</h5>
                             <p class="card-text">A spicy meat skewer delicacy, often served with sliced onions and peppers.</p>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/egusi.jpg" class="card-img-top lazy" alt="Egusi Soup" loading="lazy">
+                        <img data-src="images/egusi.jpg" class="card-img-top lazy" alt="A bowl of Egusi Soup with vegetables and meat" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title" style="color: #FFD700;">Egusi Soup</h5>
                             <p class="card-text">A hearty soup made with melon seeds, vegetables, and assorted meats.</p>
@@ -65,23 +65,23 @@
                 </div>
             </div>
 
-            <div class="row mt-5">
+            <div class="row mt-5 align-items-center">
                 <div class="col-md-6">
-                    <h3 style="color: #008000;">Akara</h3>
+                    <h2 style="color: #008000;">Akara</h2>
                     <p>Deep-fried bean cakes, crispy on the outside and soft on the inside, commonly eaten as a snack or breakfast.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="images/akara.jpg" alt="Akara" class="img-fluid lazy" loading="lazy">
+                    <img data-src="images/akara.jpg" alt="A plate of freshly fried Akara served as a snack" class="img-fluid lazy" loading="lazy">
                 </div>
             </div>
 
-            <div class="row mt-5">
+            <div class="row mt-5 align-items-center">
                 <div class="col-md-6 order-md-2">
-                    <h3 style="color: #008000;">Moi Moi</h3>
+                    <h2 style="color: #008000;">Moi Moi</h2>
                     <p>A steamed bean pudding delicacy, Moi Moi is a versatile dish often served alongside rice dishes.</p>
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <img src="images/moimoi.jpg" alt="Moi Moi" class="img-fluid lazy" loading="lazy">
+                    <img data-src="images/moimoi.jpg" alt="A serving of Moi Moi wrapped in leaves" class="img-fluid lazy" loading="lazy">
                 </div>
             </div>
         </div>
@@ -89,8 +89,8 @@
 
     <!-- Footer -->
     <footer class="text-center py-4">
-        <p><span id="currentYear"></span> Discover Nigeria. All rights reserved. | <a href="Attributions.html">Attributions</a></p>
-        <p  id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+        <p><span id="currentYear"></span> Discover Nigeria. All rights reserved. | <a href="attributions.html">Attributions</a></p>
+        <p id="lastModified"></p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

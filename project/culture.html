@@ -19,26 +19,26 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li><a class="nav-link" href="index.html">Home</a></li>
-                    <li><a class="nav-link active" href="culture.html">Culture</a></li>
-                    <li><a class="nav-link" href="landmarks.html">Landmarks</a></li>
-                    <li><a class="nav-link" href="cuisine.html">Cuisine</a></li>
-                    <li><a class="nav-link" href="potential.html">Potential</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="culture.html" aria-current="page">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="landmarks.html">Landmarks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cuisine.html">Cuisine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="potential.html">Potential</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Culture Section -->
-    <section class="section bg-light">
+    <section class="section bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-4" style="color: #008000;">Culture</h2>
+            <h1 class="text-center mb-4" style="color: #008000;">Culture</h1>
             <p class="text-center">Immerse yourself in Nigeria's rich cultural heritage, from vibrant music and dance to colorful festivals and traditional attire.</p>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/music.jpg" class="card-img-top lazy" alt="Music" loading="lazy">
+                        <img data-src="images/music.jpg" class="card-img-top lazy" alt="Afrobeat music performance" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title" style="color: #008000;">Music</h5>
                             <p class="card-text">Explore the beats of Afrobeat, highlife, and traditional sounds.</p>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/dance.jpg" class="card-img-top lazy" alt="Dance" loading="lazy">
+                        <img data-src="images/dance.jpg" class="card-img-top lazy" alt="Traditional Nigerian dance" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title" style="color: #008000;">Dance</h5>
                             <p class="card-text">Discover traditional and modern dance styles across Nigeria.</p>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/festival.jpg" class="card-img-top lazy" alt="Festivals" loading="lazy">
+                        <img data-src="images/festival.jpg" class="card-img-top lazy" alt="Colorful Nigerian festival" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title" style="color: #008000;">Festivals</h5>
                             <p class="card-text">Experience festivals that celebrate Nigeria's diversity.</p>
@@ -65,13 +65,13 @@
                 </div>
             </div>
 
-            <div class="row mt-5">
+            <div class="row mt-5 align-items-center">
                 <div class="col-md-6">
-                    <h3 style="color: #008000;">Traditional Attire</h3>
+                    <h2 style="color: #008000;">Traditional Attire</h2>
                     <p>From the agbada to the iro and buba, traditional Nigerian clothing is a vibrant expression of the nation's cultural identity. Explore the colorful fabrics and designs unique to various ethnic groups.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="images/attire.jpg" alt="Traditional Attire" class="img-fluid lazy" loading="lazy">
+                    <img data-src="images/attire.jpg" alt="Traditional Nigerian clothing" class="img-fluid lazy" loading="lazy">
                 </div>
             </div>
         </div>
@@ -79,8 +79,8 @@
 
     <!-- Footer -->
     <footer class="text-center py-4">
-        <p><span id="currentYear"></span> Discover Nigeria. All rights reserved. | <a href="Attributions.html">Attributions</a></p>
-        <p  id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+        <p><span id="currentYear"></span> Discover Nigeria. All rights reserved. | <a href="attributions.html">Attributions</a></p>
+        <p id="lastModified"></p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
