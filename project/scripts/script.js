@@ -62,16 +62,34 @@ const outputArea = document.querySelector("#output");
 
 if (saveDataButton) {
     saveDataButton.addEventListener("click", () => {
-        const data = document.querySelector("#dataInput").value;
-        localStorage.setItem("userData", data);
+        const name = document.querySelector("#name").value.trim();
+        const email = document.querySelector("#email").value.trim();
+        const message = document.querySelector("#message").value.trim();
+
+        if (!name || !email || !message) {
+            alert("Please fill out all fields before saving.");
+            return;
+        }
+
+        const data = {
+            name,
+            email,
+            message
+        };
+
+        localStorage.setItem("userData", JSON.stringify(data));
         displayData();
     });
 }
 
 function displayData() {
     if (outputArea) {
-        const savedData = localStorage.getItem("userData");
-        outputArea.textContent = savedData ? savedData : "No data saved yet.";
+        const savedData = JSON.parse(localStorage.getItem("userData"));
+        if (savedData) {
+            outputArea.textContent = `Name: ${savedData.name}, Email: ${savedData.email}, Message: ${savedData.message}`;
+        } else {
+            outputArea.textContent = "No data saved yet.";
+        }
     }
 }
 
@@ -79,6 +97,7 @@ function displayData() {
 window.onload = () => {
     displayData();
 };
+
 
 // Set the current year and last modified date
 let d = new Date();
